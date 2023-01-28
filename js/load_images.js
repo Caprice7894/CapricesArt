@@ -27,7 +27,6 @@ async function load_images(container){
 		img.src = URL.createObjectURL(myBlob);
 		
 		link.appendChild(img);
-		console.log(link);
 		container.appendChild(link);
 
 	}

@@ -25,6 +25,7 @@
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css" integrity="sha512-6mc0R607di/biCutMUtU9K7NtNewiGQzrvWX4bWTeqmljZdJrwYvKJtnhgR+Ryvj+NRJ8+NnnCM/biGqMe/iRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css" integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<script type="text/javascript" src="js/load_images.js"></script>
 </head>
@@ -32,7 +33,7 @@
 	<aside>
 		<ul>
 			<li>
-				<a href="#galery">Galeria</a>
+				<a href="#index">Galeria</a>
 			</li>
 			<li>
 				<a href="#about">Sobre mí</a>
@@ -42,7 +43,14 @@
 			</li>
 		</ul>
 	</aside>
-	<h1>Caprice's Art</h1>
+	<h1 id='index'>Caprice's Art</h1>
+	<label for="shownav" id="navbutton"><i class="fa-solid fa-bars"></i></label>
+	<input type="checkbox" name="shownav" id="shownav">
+	<nav>
+		<a href="#index">Galeria</a>
+		<a href="#about">Sobre mí</a>
+		<a href="#contacto">Contacto</a>
+	</nav>
 	<main id="galery">
 	</main>
 	<div class='about' id='about'>

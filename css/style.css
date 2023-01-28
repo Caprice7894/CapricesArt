@@ -13,6 +13,7 @@ body{
 
 h1{
 	text-align: center;
+	font-weight: 900;
 }
 
 main{
@@ -59,6 +60,40 @@ aside ul li a{
 	font-weight: 900;
 	text-transform: uppercase;
 	color: black;
+}
+
+nav{
+	background: #ffffffaa;
+	position: fixed;
+	width: 100vw;
+	bottom: -1000px;
+	backdrop-filter: blur(10px);
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+}
+#navbutton{
+	position: fixed;
+	top: 22px;
+	right: 22px;
+	font-size: 2em;
+}
+
+#shownav{
+	display: none;
+}
+
+#shownav:checked ~ nav{
+   bottom: 0;
+
+}
+nav a{
+	padding: 1em;
+	font-size: 2em;
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
 }
 
 .about{
@@ -109,4 +144,33 @@ address > a{
 a i {
 	color: white;
 	font-size: 3em;
+}
+
+@media only screen and (max-width: 650px){
+	aside{
+		display: none;
+	}
+
+	nav{
+		display: flex;
+	}
+
+	.about{
+		width: 100vw;
+		flex-direction: column-reverse;
+		margin: 0;
+	}
+
+	.about article{
+		margin: 0;
+		padding: 0;
+		width: 100vw;
+	}
+
+	.about p{
+		text-align: left;
+		width: 80vw;
+		margin: auto;
+		box-sizing: content-box;
+	}
 }
